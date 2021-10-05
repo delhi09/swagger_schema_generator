@@ -1,0 +1,63 @@
+paths:
+  /todo/:
+    get or post or delete:
+      summary: todo
+      description: todo
+      tags:
+      - todo
+      parameters: todo
+      responses:
+        '200':
+          description: リクエスト成功
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                      description: todo
+                      example: delhi09
+                    age:
+                      type: integer
+                      description: todo
+                      example: 100
+                    height:
+                      type: integer
+                      format: float
+                      description: todo
+                      example: 175.5
+                    prefecture:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          description: todo
+                          example: tokyo
+                        code:
+                          type: integer
+                          description: todo
+                          example: 13
+                    telephone number:
+                      type: array
+                      items:
+                        type: string
+                        description: todo
+                        example:
+                        - 111-1111-1111
+                        - 222-2222-2222
+                    mail_address:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          private:
+                            type: string
+                            description: todo
+                            example: hoge@example.com
+                    is_adult:
+                      type: boolean
+                      description: todo
+                      example: true
